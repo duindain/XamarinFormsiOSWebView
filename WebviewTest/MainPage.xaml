@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vms="clr-namespace:WebviewTest"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+    x:Class="WebviewTest.MainPage">
+
+    <ContentPage.BindingContext>
+        <vms:WebViewVM/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <!-- Place new controls here -->
+        
+            <StackLayout class="page" Orientation="Vertical">
+
+               <Image x:Name="newsImage" Source="https://picsum.photos/200" HorizontalOptions="FillAndExpand"/>
+
+                <WebView
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    WidthRequest="1000"
+                    HeightRequest="800"
+                    Source="{Binding Content}"/>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
