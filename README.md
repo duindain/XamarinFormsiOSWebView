@@ -1,4 +1,4 @@
-In the latest version 4.4.0.991265 text size in iOS in a WebView is significantly smaller almost too small to read, in previous versions the size matched Android and was normal font sizing
+In the latest version XF 4.4.0.991265 text size in iOS in a WebView is significantly smaller almost too small to read, in previous versions the size matched Android.
 
 This is a demo application demonstrating a simple webview with the issue
 
